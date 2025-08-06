@@ -1,0 +1,250 @@
+/* style.css */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #011113, #062828);
+  color: #f1f1f1;
+  scroll-behavior: smooth;
+}
+
+header, main, footer {
+  animation: fadeIn 0.5s ease-in-out;
+  
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+nav {
+  background-color: rgba(6, 44, 47, 0.9);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #00ffff;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #f1f1f1;
+  transition: color 0.3s ease, transform 0.3s ease;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #00ffff;
+  transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+nav ul li a:hover {
+  color: #00ffff;
+  transform: scale(1.1);
+}
+
+section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+#home .btn-connect {
+  margin-top: 1rem;
+  background-color: transparent;
+  border: 2px solid #00ffff;
+  padding: 0.8rem 1.5rem;
+  border-radius: 10px;
+  color: #00ffff;
+  font-weight: bold;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#home .btn-connect:hover {
+  background-color: #00ffff;
+  color: #000;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #00ffff;
+}
+
+.skills-bars {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.skill {
+  margin-bottom: 1.5rem;
+}
+
+.skill-name {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.skill-bar {
+  background: #1f1f1f;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 20px;
+}
+
+.skill-bar-fill {
+  background: #00ffff;
+  height: 100%;
+  width: 0;
+  transition: width 1s ease;
+}
+
+.skill:hover .skill-bar-fill {
+  width: 100% !important;
+}
+
+.certifications-list {
+  max-width: 600px;
+  margin: auto;
+  text-align: left;
+  background: rgba(0,0,32,0.5);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,255,255,0.3);
+}
+
+.certifications-list li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #00ffff33;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.project-card {
+  background-color: rgba(0, 0, 32, 0.7);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+}
+
+.project-card a {
+  color: #00ffff;
+  text-decoration: none;
+}
+
+.project-card a:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: #00ffff;
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #f8fafb;
+  color: #27b9c9;
+  box-shadow: 0 0 10px #00ffff;
+  transform: translateY(-2px);
+}
+
+form {
+  max-width: 500px;
+  margin: 2rem auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+form input,
+form textarea {
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #2c2c2c;
+  color: #f1f1f1;
+}
+
+form button {
+  background-color: #00ffff;
+  border: none;
+  padding: 1rem;
+  border-radius: 5px;
+  color: #000;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+form button:hover {
+  background-color: #005f73;
+  color: #fff;
+  box-shadow: 0 0 10px #00ffff;
+  transform: translateY(-2px);
+}
+
+#contact p {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+  color: #e0ffff;
+}
+
+#contact a {
+  color: #00ffff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: rgba(0, 0, 32, 0.9);
+  color: #999;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}

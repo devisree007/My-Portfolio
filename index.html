@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Devisree Thota | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">Devisree</div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home">
+      <h1 class="shiner">Hi, I'm <span class="shiner">Devisree Thota</span></h1>
+      <p>Full Stack Developer | Web Enthusiast</p>
+      <div style="margin-top: 1rem; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href ="Devisree_Thota_Resume1.pdf" download class="btn-connect">Download Resume</a>
+        <button class="btn-connect" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'});">Let's Connect</button>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I'm an enthusiastic and detail-oriented Computer Science student currently pursuing my B.Tech in Computer Science and Engineering at Vemu Institute of Technology. I specialize in full stack development with HTML, CSS, JavaScript, React.js, Java, and SQL.</p>
+      <p>I’ve developed projects like a temperature converter, a number guessing game, and a personal portfolio website. I'm passionate about writing clean code and continuously learning modern tech.</p>
+      <p>I also work with Git, GitHub, and VS Code for efficient and collaborative development.</p>
+    </section>
+
+    <section id="skills">
+      <h2 class="shiner">Skills</h2>
+      <div class="skills-bars">
+        <div class="skill"><div class="skill-name">HTML - 95%</div><div class="skill-bar"><div class="skill-bar-fill" style="width: 95%;"></div></div></div>
+        <div class="skill"><div class="skill-name">CSS - 90%</div><div class="skill-bar"><div class="skill-bar-fill" style="width: 90%;"></div></div></div>
+        <div class="skill"><div class="skill-name">JavaScript - 85%</div><div class="skill-bar"><div class="skill-bar-fill" style="width: 85%;"></div></div></div>
+        <div class="skill"><div class="skill-name">React.js - 75%</div><div class="skill-bar"><div class="skill-bar-fill" style="width: 75%;"></div></div></div>
+        <div class="skill"><div class="skill-name">Java - 80%</div><div class="skill-bar"><div class="skill-bar-fill" style="width: 80%;"></div></div></div>
+        <div class="skill"><div class="skill-name">Python - 85%</div><div class="skill-bar"><div class="skill-bar-fill" style="width: 85%;"></div></div></div>
+        <div class="skill"><div class="skill-name">SQL - 80%</div><div class="skill-bar"><div class="skill-bar-fill" style="width: 80%;"></div></div></div>
+      </div>
+
+      <h3>Other Technologies</h3>
+      <div class="skills-bars">
+        <div class="skill" style="display: flex; align-items: center; gap: 1rem;">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="40" />
+          <span>Git</span>
+        </div>
+        <div class="skill" style="display: flex; align-items: center; gap: 1rem;">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="40" style="background: white; border-radius: 5px;" />
+          <span>GitHub</span>
+        </div>
+        <div class="skill" style="display: flex; align-items: center; gap: 1rem;">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" width="40" />
+          <span>VS Code</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="certifications">
+      <h2 class="shiner">Certifications</h2>
+      <ul class="certifications-list">
+        <li>JavaScript Fundamentals to Advanced – Udemy</li>
+        <li>Programming for Everybody (Python) – Coursera</li>
+        <li>Introduction to Git and GitHub – Coursera</li>
+        <li>Introduction to Cloud Computing – Udemy</li>
+        <li>Java Core – Internshala</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Temperature Converter</h3>
+          <p>Responsive tool for converting between Celsius, Fahrenheit, and Kelvin.</p>
+          <a href="https://github.com/devisree007/temperature_converter" target="_blank">View Code</a>
+        </div>
+        <div class="project-card">
+          <h3>Personal Portfolio</h3>
+          <p>Dark-themed portfolio website with responsive design and smooth animations.</p>
+          <a href="https://github.com/devisree007/portfolio" target="_blank">View Code</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <div class="contact-info">
+        <p><strong>Email:</strong> <a href="mailto:devisreethota9@gmail.com">devisreethota9@gmail.com</a></p>
+        <p><strong>Phone:</strong> <a href="tel:+918374800948">+91 8374800948</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/devisree007" target="_blank">github.com/devisree007</a></p>
+        <p><strong>LinkedIn:</strong> <a href="http://www.linkedin.com/in/devisreethota/" target="_blank">linkedin.com/in/devisreethota</a></p>
+      </div>
+
+      <form id="messageForm">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Devisree Thota. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
